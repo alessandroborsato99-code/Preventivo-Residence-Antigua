@@ -410,29 +410,36 @@
       h2 { font-size: 1.8rem; }
       h3 { font-size: 1.3rem; }
 
-      .comparison { font-size: 0.9rem; }
+      .comparison { font-size: 0.85rem; }
       .comparison thead { display: none; }
       .comparison tr {
         display: flex;
         flex-direction: column;
-        padding: 1.2rem 0;
+        padding: 1rem 0;
         border-bottom: 0.5px solid var(--divider);
       }
       .comparison td {
         border: none;
-        padding: 0.3rem 0;
+        padding: 0.2rem 0;
         width: 100%;
+        line-height: 1.5;
       }
       .comparison td:first-child {
         font-weight: 500;
-        font-size: 0.95rem;
-        margin-bottom: 0.3rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+        color: var(--accent);
       }
-      .comparison td:nth-child(2)::before { content: "Tradizionale: "; font-weight: 400; color: var(--text-light); }
-      .comparison td:last-child::before { content: "Noi: "; font-weight: 500; color: var(--accent); }
+      .comparison td:nth-child(2) { color: var(--text-light); }
+      .comparison td:nth-child(2)::before { content: "Oggi: "; font-weight: 400; }
+      .comparison td:last-child { color: var(--text); }
+      .comparison td:last-child::before { content: "Con noi: "; font-weight: 500; }
 
       .pricing-table td { font-size: 0.95rem; }
       .pricing-table .total td { font-size: 1.1rem; }
+
+      .dark-bg .lead { font-size: 1.1rem; }
+      .dark-bg h2 { font-size: 1.6rem; }
     }
 
     @media print {
@@ -654,7 +661,7 @@
     <div class="inner">
       <span class="label" style="color: rgba(234,231,225,0.4);">La visione</span>
       <h2>Non stai comprando un sito.<br>Stai costruendo un sistema.</h2>
-      <p class="lead">Questo progetto &egrave; il primo passo di una strategia digitale per tutte le tue strutture. Ogni nuovo progetto riutilizza quello che &egrave; gi&agrave; stato costruito &mdash; con costi che scendono e qualit&agrave; che sale.</p>
+      <p class="lead">Questo progetto &egrave; il primo passo di una strategia digitale per tutte le tue strutture.</p>
 
     </div>
   </section>
